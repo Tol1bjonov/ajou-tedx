@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CalendarDays, MapPin, Clock, ExternalLink } from "lucide-react"
@@ -72,7 +72,11 @@ export default function Home() {
               Meet our lineup of innovative thinkers and doers who will share their ideas worth spreading.
             </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div>
+            <p className="text-3xl font-bold tracking-tight text-tedRed text-center mt-5">Coming Soon..</p>
+            <p className="mt-7 text-gray-700">Speakers list will be released on May 2</p>
+          </div>
+          {/* <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {[1, 2, 3].map((speaker) => (
               <article key={speaker} className="flex flex-col items-start">
                 <div className="relative w-full">
@@ -106,8 +110,8 @@ export default function Home() {
             <Button asChild className="bg-tedRed hover:bg-tedRed/90">
               <Link href="/speakers">View All Speakers</Link>
             </Button>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
       </section>
 
       {/* Location Section with Map */}
